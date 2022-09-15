@@ -23,9 +23,6 @@ a{
   text-decoration: none;
   color: #fff;
 }
-a:hover {
-  border-bottom:1px solid #fff;
-}
 
 /* HEADER PAGE */
 #header-page, #footer-page {
@@ -47,6 +44,24 @@ a:hover {
   display: flex;
   gap: 30px;
   font-size: 1.1em;
+}
+.links {
+  position: relative;
+}
+.links::before {
+  position: absolute;
+  content:'';
+  width: 100%;
+  height: 10%;
+  bottom: -2px;
+  left: 0;
+  background-image: linear-gradient(to left,#b60000,#dd0303);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms linear;
+}
+.links:hover::before {
+  transform: scaleX(1);
 }
 
 /* MAIN PAGE */
