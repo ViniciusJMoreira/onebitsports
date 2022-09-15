@@ -17,10 +17,12 @@
     gap: 100px 0;
   }
   .article-sports {
-    width: 350px;
+    max-width: 350px;
+    height: 400px;
   }
   .figure-sports {
-    height: 250px;
+    width: 100%;
+    height: 200px;
   }
   .figure-extra-sports {
     width: 250px;
