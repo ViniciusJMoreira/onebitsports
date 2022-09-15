@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@media (min-width: 1800px) {
+  .image-logo {
+    width: 300px;
+  }
+  #nav-links {
+    font-size: 1.2em;
+  }
+  #title-header {
+    font-size: 2.8em;
+  }
+  #subtitle-header {
+    font-size: 1.8em;
+  }
+  #principal-content {
+    gap: 100px 0;
+  }
+  .article-sports {
+    width: 350px;
+  }
+  .figure-sports {
+    height: 250px;
+  }
+  .figure-extra-sports {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1150px) {
+  #main-page {
+    grid-template-columns: 1fr;
+  }
+  #main-header {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  #subtitle-header {
+    font-size: 1.3em;
+  }
+  #principal-content {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  #extra-content {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+}
+
+@media (max-width: 900px) {
+  #principal-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    gap: 25px;
+  }
+  #title-header {
+    font-size: 2em;
+  }
+  #subtitle-header {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 550px) {
+  #nav-links {
+    font-size: .95em;
+  }
+  #header-page, #footer-page {
+    flex-direction: column;
+    gap: 15px;
+  }
+  #title-header {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 400px) {
+  #subtitle-header {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 290px) {
+  .article-sports {
+    width: 200px;
+  }
+}

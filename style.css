@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* CONGIFURAÇÕES GERAIS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+:root {
+  font-size: 1em;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+a{
+  font-variant: small-caps;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* HEADER PAGE */
+#header-page, #footer-page {
+  width: 100%;
+  height: auto;
+  padding: 15px 20px;
+  background-color: #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .9);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image-logo {
+  width: 200px;
+  height: auto;
+}
+#nav-links {
+  display: flex;
+  gap: 30px;
+  font-size: 1.1em;
+}
+.links:hover {
+  border-bottom:1px solid #fff;
+}
+
+/* MAIN PAGE */
+#main-page {
+  display: grid;
+  grid-template-columns: 1fr .3fr;
+  grid-template-rows: auto;
+}
+
+/* MAIN HEADER */
+#main-header {
+  grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 50px 10px;
+}
+#title-header {
+  font-size: 2.4em;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: 5px 5px 0 rgba(95, 95, 95, 0.2);
+}
+#subtitle-header {
+  text-align: center;
+  color: #2c2c2c;
+}
+
+/* MAIN CONTENT */
+#principal-content {
+  grid-area: 2 / 1 / 3 / 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: baseline;
+  gap: 50px;
+  margin: 0 15px;
+  padding-bottom: 50px;
+}
+.article-sports {
+  max-width: 250px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 500ms;
+}
+.figure-sports {
+  width: inherit;
+  height: 150px;
+}
+.image-sports, .image-extra-sports {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 500ms;
+}
+.article-sports:hover, .image-extra-sports:hover {
+  transform: scale(1.02);
+}
+.title-article {
+  margin-top: 15px;
+}
+.paragraph-article {
+  width: inherit;
+  font-size: 1.1em;
+}
+
+/* EXTRA CONTENT */
+#extra-content {
+  grid-area: 2 / 2 / 3 / 3;
+  background-image: conic-gradient( #353535, #3d3d3d);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+#title-aside {
+  font-variant: small-caps;
+  font-size: 2em;
+}
+#title-aside, .title-section {
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+}
+.figure-extra-sports {
+  width: 200px;
+  height: 150px;
+}
