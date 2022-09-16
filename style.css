@@ -118,6 +118,7 @@ body {
 .figure-sports {
   width: inherit;
   min-height: 150px;
+  max-height: 200px;
 }
 .image-sports, .image-extra-sports {
   width: 100%;
