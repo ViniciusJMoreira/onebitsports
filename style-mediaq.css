@@ -78,6 +78,9 @@
     flex-direction: column;
     gap: 15px;
   }
+  #footer-page {
+    flex-direction: column-reverse;
+  }
   #title-header {
     font-size: 1.6em;
   }
