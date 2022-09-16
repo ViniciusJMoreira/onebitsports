@@ -49,6 +49,9 @@
   #title-aside {
     grid-area: 1 / 1 / 2 / 3;
   }
+  .last-row-aside {
+    grid-area: 4 / 1 / 5 / 3;
+  }
 }
 
 @media (max-width: 900px) {
