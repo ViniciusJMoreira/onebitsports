@@ -23,13 +23,14 @@ body {
 #header-page, #footer-page {
   width: 100%;
   height: auto;
-  padding: 15px 20px;
-  background-color: #000;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .9);
+  padding: 30px;
+  background-color: #181818;
+  box-shadow: 0 0 6px rgba(128, 128, 128, 0.3);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 15px;
 }
 .image-logo {
   width: 200px;
@@ -80,6 +81,7 @@ body {
   margin: 50px 10px;
 }
 #title-header {
+  color: #181818;
   font-size: 2.4em;
   text-align: center;
   font-weight: 900;
@@ -102,7 +104,7 @@ body {
   gap: 50px;
 }
 .article-sports {
-  max-width: 250px;
+  width: 250px;
   height: 350px;
   background-color: #fff;
   cursor: pointer;
@@ -115,7 +117,7 @@ body {
 }
 .figure-sports {
   width: inherit;
-  height: 150px;
+  min-height: 150px;
 }
 .image-sports, .image-extra-sports {
   width: 100%;
@@ -139,7 +141,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 .title-article {
   font-size: 1.3em;
@@ -156,6 +158,7 @@ body {
   grid-area: 2 / 2 / 3 / 3;
   background-image: url('imagens/background.jpg') ;
   background-size: contain;
+  box-shadow: 0 0 6px rgba(128, 128, 128, 0.3);
 
 
   display: flex;
